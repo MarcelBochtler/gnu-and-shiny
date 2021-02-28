@@ -1,0 +1,36 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                gnu-and-shiny
+version             1.0.0
+categories          sysutils
+platforms           darwin
+license             MIT
+maintainers         @MarcelBochtler
+description         Common GNU utils
+long_description    A meta package to install the most common gnu utils and more updated versions from 
+homepage            https://github.com/MarcelBochtler/gnu-and-shiny
+
+fetch               {}
+checksum            {}
+use_configure       no
+build               {}
+install             {}
+
+depends_build \
+    port:bash \
+    port:coreutils \
+    port:diffutils \
+    port:findutils \
+    port:gawk \
+    port:git \
+    port:gnutar \
+    port:grep \
+    port:gsed \
+    port:gzip \
+    port:less \
+    port:openssh \
+    port:rsync \
+    port:vim \
+    port:zsh     
